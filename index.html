@@ -1,0 +1,3719 @@
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
+23/02/2025 03:47:49 -->
+
+<html>
+    <title>AnSyif Solution</title>
+    <head>
+        <meta charset="utf-8"><meta name="viewport" content="width=1440, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-load-script" src="load.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:500,400,700|Josefin+Sans:400italic,700,200,600,300,500,400|Sansita+Swashed:300,500|Roboto+Mono:700");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --alto: #d9d9d96b;
+  --alto-2: #d9d9d94a;
+  --azalea: #f5c9d9;
+  --black: #000000;
+  --blue-jeans: #5daaff;
+  --cod-gray: #090909;
+  --fuchsia-blue: #8359e399;
+  --fuchsia-blue-2: #8359e3;
+  --hot-pink: #ff72b6;
+  --lavender: #bb87d4;
+  --pattens-blue: #deedff;
+  --violet-red: #ec5a99;
+  --violet-red-2: #ec5a99c7;
+  --white: #ffffff;
+ 
+  --font-size-l: 28px;
+  --font-size-m: 25px;
+  --font-size-s: 24px;
+  --font-size-xl: 54px;
+  --font-size-xs: 22px;
+  --font-size-xxs: 19px;
+  --font-size-xxxs: 17px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-josefin_sans: "Josefin Sans", Helvetica;
+  --font-family-roboto_mono: "Roboto Mono", Helvetica;
+  --font-family-sansita_swashed: "Sansita Swashed", Helvetica;
+}
+.josefinsans-normal-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-light-cod-gray-25px {
+  color: var(--cod-gray);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.josefinsans-extra-light-black-22px {
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 200;
+}
+
+.josefinsans-medium-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.josefinsans-normal-violet-red-35px {
+  color: var(--violet-red);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-normal-blue-jeans-47px {
+  color: var(--blue-jeans);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-normal-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-normal-black-33px {
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-semi-bold-hot-pink-30px {
+  color: var(--hot-pink);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter-bold-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.inter-medium-black-54px {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.josefinsans-normal-blue-jeans-54px {
+  color: var(--blue-jeans);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xl);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.josefinsans-extra-light-cod-gray-17px {
+  color: var(--cod-gray);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 200;
+}
+
+.josefinsans-extra-light-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 200;
+}
+
+.josefinsans-semi-bold-fuchsia-blue-28px {
+  color: var(--fuchsia-blue-2);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.josefinsans-bold-hot-pink-28px {
+  color: var(--hot-pink);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.josefinsans-normal-hot-pink-47px {
+  color: var(--hot-pink);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-normal-cod-gray-33px {
+  color: var(--cod-gray);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.josefinsans-bold-blue-jeans-17px {
+  color: var(--blue-jeans);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.josefinsans-light-white-19px {
+  color: var(--white);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 300;
+}
+
+:root {
+}
+
+
+/* screen - porto-ansip */
+
+.porto-ansip {
+  background-color: var(--white);
+  height: 7364px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.porto-ansip .welcome-NG4oFS {
+  background-color: #fde8e7;
+  height: 1024px;
+  left: -1px;
+  top: 5687px;
+}
+
+.porto-ansip .rectangle-3-NG4oFS {
+  background-color: var(--lavender);
+  height: 87px;
+  left: -137px;
+  position: absolute;
+  top: 7283px;
+  transform: rotate(0.10deg);
+  width: 1621px;
+}
+
+.porto-ansip .group-9-NG4oFS {
+  height: 562px;
+  left: 727px;
+  top: 378px;
+  width: 713px;
+}
+
+.porto-ansip .group-11-NG4oFS {
+  background-color: transparent;
+  height: 174px;
+  left: -151px;
+  position: absolute;
+  top: 877px;
+  width: 1743px;
+}
+
+.porto-ansip .rectangle-3-3OdDw6 {
+  background-color: var(--lavender);
+  height: 73px;
+  left: 76px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(3.47deg);
+  width: 1666px;
+}
+
+.porto-ansip .rectangle-2-3OdDw6 {
+  background-color: var(--violet-red);
+  height: 73px;
+  left: 0px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(0.02deg);
+  width: 1666px;
+}
+
+.porto-ansip .group-10-NG4oFS {
+  height: 89px;
+  left: 60px;
+  top: 225px;
+  width: 258px;
+}
+
+.porto-ansip .elemen-1-YOGwEy {
+  background-color: transparent;
+  height: 89px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 256px;
+}
+
+.porto-ansip .hello-there-YOGwEy {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 69px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 30px;
+  white-space: nowrap;
+  width: 180px;
+}
+
+.porto-ansip .group-12-NG4oFS {
+  left: 123px;
+  top: 694px;
+  width: 413px;
+}
+
+.porto-ansip .rectangle-5-drUyx0 {
+  height: 67px;
+  left: 142px;
+  width: 271px;
+}
+
+.porto-ansip .rectangle-4-drUyx0 {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 67px;
+  width: 312px;
+}
+
+.porto-ansip .group-16-drUyx0 {
+  height: 39px;
+  left: 344px;
+  top: 13px;
+  width: 39px;
+}
+
+.porto-ansip .ellipse-4-XtPWpe {
+  border-radius: 19.5px;
+  height: 39px;
+  left: 0px;
+  top: 0px;
+  width: 39px;
+}
+
+.porto-ansip .play_arrow_filled-XtPWpe {
+  height: 24px;
+  left: 8px;
+  top: 8px;
+  width: 24px;
+}
+
+.porto-ansip .group-17-NG4oFS {
+  background-color: transparent;
+  height: 54px;
+  left: 1026px;
+  position: absolute;
+  top: 1145px;
+  width: 330px;
+}
+
+.porto-ansip .rectangle-5-8acB2s {
+  height: 54px;
+  left: 113px;
+  width: 217px;
+}
+
+.porto-ansip .rectangle-4-8acB2s {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 54px;
+  width: 249px;
+}
+
+.porto-ansip .group-16-8acB2s {
+  height: 31px;
+  left: 275px;
+  top: 10px;
+  transform: rotate(1.76deg);
+  width: 31px;
+}
+
+.porto-ansip .ellipse-4-iG13lo {
+  border-radius: 15.58px/15.72px;
+  height: 31px;
+  left: -0px;
+  top: -0px;
+  width: 31px;
+}
+
+.porto-ansip .play_arrow_filled-iG13lo {
+  height: 20px;
+  left: 6px;
+  top: 6px;
+  transform: rotate(-1.76deg);
+  width: 20px;
+}
+
+.porto-ansip .group-13-NG4oFS {
+  background-color: transparent;
+  height: 57px;
+  left: 572px;
+  position: absolute;
+  top: 699px;
+  width: 177px;
+}
+
+.porto-ansip .rectangle-6-GvAR1A {
+  background-color: var(--alto);
+  border-radius: 100px;
+  height: 57px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 168px;
+}
+
+.porto-ansip .help-me-GvAR1A {
+  background-color: transparent;
+  height: 33px;
+  left: 31px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 144px;
+}
+
+.porto-ansip .elemen-2-NG4oFS {
+  background-color: transparent;
+  height: 92px;
+  left: 677px;
+  position: absolute;
+  top: 540px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-3-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 45px;
+  position: absolute;
+  top: 939px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-4-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 396px;
+  position: absolute;
+  top: 939px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-5-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 701px;
+  position: absolute;
+  top: 939px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-6-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 1029px;
+  position: absolute;
+  top: 933px;
+  width: 78px;
+}
+
+.porto-ansip .group-10-sxHvBZ {
+  height: 180px;
+  left: 115px;
+  top: 288px;
+  width: 997px;
+}
+
+.porto-ansip .title-4JzUky {
+  background-color: transparent;
+  color: var(--hot-pink);
+  font-family: var(--font-family-inter);
+  font-size: 98px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 514px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 479px;
+}
+
+.porto-ansip .we-create-for-education-4JzUky {
+  background-color: transparent;
+  color: var(--fuchsia-blue);
+  font-family: var(--font-family-inter);
+  font-size: 98px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 728px;
+}
+
+.porto-ansip .group-16-NG4oFS {
+  height: 60px;
+  left: 324px;
+  top: 1169px;
+  width: 220px;
+}
+
+.porto-ansip .provide-KwcMO0 {
+  background-color: transparent;
+  color: var(--hot-pink);
+  font-family: var(--font-family-inter);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 218px;
+}
+
+.porto-ansip .wireframe-NG4oFS {
+  left: 1108px;
+  top: 946px;
+}
+
+.porto-ansip .education-NG4oFS {
+  height: 35px;
+  left: 479px;
+  top: 946px;
+  width: 280px;
+}
+
+.porto-ansip .we-are-ansyif-an-edu-NG4oFS {
+  background-color: transparent;
+  height: 82px;
+  left: 115px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 540px;
+  width: 532px;
+}
+
+.porto-ansip .we-focus-on-user-exp-NG4oFS {
+  background-color: transparent;
+  height: 82px;
+  left: 57px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1456px;
+  width: 392px;
+}
+
+.porto-ansip .ansyif-presents-an-a-NG4oFS {
+  background-color: transparent;
+  height: 82px;
+  left: 523px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1456px;
+  width: 392px;
+}
+
+.porto-ansip .ansyif-offers-educat-NG4oFS {
+  background-color: transparent;
+  height: 82px;
+  left: 997px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1456px;
+  width: 392px;
+}
+
+.porto-ansip .view-our-portofolio-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 151px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 710px;
+  width: 280px;
+}
+
+.porto-ansip .view-all-service-NG4oFS {
+  left: 1042px;
+  top: 1154px;
+}
+
+.porto-ansip .services-NG4oFS {
+  color: var(--hot-pink);
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  height: 35px;
+  left: 239px;
+  letter-spacing: 3.00px;
+  top: 1126px;
+  width: 193px;
+}
+
+.porto-ansip .group-19-NG4oFS {
+  background-color: transparent;
+  height: 36px;
+  left: 60px;
+  position: absolute;
+  top: 1576px;
+  width: 230px;
+}
+
+.porto-ansip .arrow-right-avJJj3 {
+  height: 35px;
+  left: 193px;
+  top: 1px;
+  width: 35px;
+}
+
+.porto-ansip .group-22-NG4oFS {
+  background-color: transparent;
+  height: 36px;
+  left: 997px;
+  position: absolute;
+  top: 1576px;
+  width: 230px;
+}
+
+.porto-ansip .arrow-right-ncSyn9 {
+  height: 35px;
+  left: 193px;
+  top: 1px;
+  width: 35px;
+}
+
+.porto-ansip .group-20-NG4oFS {
+  background-color: transparent;
+  height: 36px;
+  left: 523px;
+  position: absolute;
+  top: 1576px;
+  width: 230px;
+}
+
+.porto-ansip .arrow-right-kz1UKS {
+  height: 35px;
+  left: 193px;
+  top: 1px;
+  width: 35px;
+}
+
+.porto-ansip .group-18-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 194px;
+  position: absolute;
+  top: 1344px;
+  width: 742px;
+}
+
+.porto-ansip .ui-ux-disign-VEbhGe {
+  background-color: transparent;
+  height: 35px;
+  left: 0px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 4px 7.699999809265137px #00000040;
+  top: 0px;
+  width: 315px;
+}
+
+.porto-ansip .app-design-VEbhGe {
+  height: 35px;
+  left: 505px;
+  text-shadow: 0px 4px 7.699999809265137px #00000040;
+  top: 4px;
+  width: 233px;
+}
+
+.porto-ansip .group-21-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 1173px;
+  position: absolute;
+  top: 1348px;
+  width: 235px;
+}
+
+.porto-ansip .education-Q2dlg8 {
+  height: 35px;
+  left: 0px;
+  text-shadow: 0px 4px 7.699999809265137px #00000040;
+  top: 0px;
+  width: 233px;
+}
+
+.porto-ansip .app-design-NG4oFS {
+  height: 35px;
+  left: 129px;
+  top: 946px;
+  width: 280px;
+}
+
+.porto-ansip .dashboard-NG4oFS {
+  left: 785px;
+  top: 951px;
+}
+
+.porto-ansip .welcome-sxHvBZ {
+  background-color: var(--white);
+  height: 912px;
+  left: 0px;
+  top: 1827px;
+}
+
+.porto-ansip .group-2-WNvyVv {
+  background-color: transparent;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 1791px;
+  left: -372px;
+  opacity: 0.67;
+  position: absolute;
+  top: -197px;
+  width: 1966px;
+}
+
+.porto-ansip .ellipse-3-Sdxyeu {
+  background-color: transparent;
+  height: 912px;
+  left: 372px;
+  position: absolute;
+  top: 197px;
+  width: 1440px;
+}
+
+.porto-ansip .ellipse-1-Sdxyeu {
+  background-color: #a7aef9;
+  border-radius: 320.31px/79.24px;
+  filter: blur(200px);;
+  height: 158px;
+  left: 874px;
+  position: absolute;
+  top: 89px;
+  width: 641px;
+}
+
+.porto-ansip .ellipse-2-Sdxyeu {
+  background-color: transparent;
+  height: 895px;
+  left: 372px;
+  position: absolute;
+  top: 214px;
+  width: 1440px;
+}
+
+.porto-ansip .group-24-WNvyVv {
+  background-color: transparent;
+  height: 64px;
+  left: 713px;
+  position: absolute;
+  top: 163px;
+  width: 291px;
+}
+
+.porto-ansip .x1-1-kxn5x0 {
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  width: 73px;
+}
+
+.porto-ansip .about-me-kxn5x0 {
+  background-color: transparent;
+  height: 45px;
+  left: 71px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 19px;
+  width: 218px;
+}
+
+.porto-ansip .group-9-WNvyVv {
+  height: 627px;
+  left: 31px;
+  top: 168px;
+  width: 685px;
+}
+
+.porto-ansip .who-is-WNvyVv {
+  background-color: transparent;
+  color: var(--fuchsia-blue);
+  font-family: var(--font-family-sansita_swashed);
+  font-size: 51px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 830px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 214px;
+  white-space: nowrap;
+  width: 149px;
+}
+
+.porto-ansip .an-syif-solution-WNvyVv {
+  color: var(--white);
+  font-family: var(--font-family-sansita_swashed);
+  font-size: 51px;
+  font-weight: 500;
+  height: auto;
+  left: 857px;
+  letter-spacing: 0.00px;
+  top: 272px;
+  white-space: nowrap;
+  width: 394px;
+}
+
+.porto-ansip .an-syif-solution-seb-WNvyVv {
+  background-color: transparent;
+  height: 72px;
+  left: 702px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 359px;
+  width: 712px;
+}
+
+.porto-ansip .project-completed-WNvyVv {
+  background-color: transparent;
+  height: 22px;
+  left: 699px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 514px;
+  width: 245px;
+}
+
+.porto-ansip .industry-corporate-WNvyVv {
+  background-color: transparent;
+  height: 22px;
+  left: 938px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 514px;
+  width: 245px;
+}
+
+.porto-ansip .years-of-experience-WNvyVv {
+  background-color: transparent;
+  height: 22px;
+  left: 1189px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 514px;
+  width: 302px;
+}
+
+.porto-ansip .x7500-WNvyVv {
+  background-color: transparent;
+  height: 62px;
+  left: 702px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 454px;
+  width: 218px;
+}
+
+.porto-ansip .x1200-WNvyVv {
+  background-color: transparent;
+  height: 62px;
+  left: 938px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 454px;
+  width: 218px;
+}
+
+.porto-ansip .x19-WNvyVv {
+  background-color: transparent;
+  height: 62px;
+  left: 1189px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 454px;
+  width: 113px;
+}
+
+.porto-ansip .group-12-WNvyVv {
+  left: 689px;
+  top: 600px;
+  width: 415px;
+}
+
+.porto-ansip .rectangle-5-2RdAQj {
+  height: 67px;
+  left: 142px;
+  width: 271px;
+}
+
+.porto-ansip .rectangle-4-2RdAQj {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 67px;
+  width: 312px;
+}
+
+.porto-ansip .group-16-2RdAQj {
+  height: 39px;
+  left: 344px;
+  top: 13px;
+  width: 39px;
+}
+
+.porto-ansip .ellipse-4-rf6nNo {
+  border-radius: 19.5px;
+  height: 39px;
+  left: 0px;
+  top: 0px;
+  width: 39px;
+}
+
+.porto-ansip .play_arrow_filled-rf6nNo {
+  height: 24px;
+  left: 8px;
+  top: 8px;
+  width: 24px;
+}
+
+.porto-ansip .download-corp-action-2RdAQj {
+  background-color: transparent;
+  height: 35px;
+  left: 28px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 17px;
+  width: 280px;
+}
+
+.porto-ansip .elemen-13-WNvyVv {
+  background-color: transparent;
+  height: 128px;
+  left: 676px;
+  position: absolute;
+  top: 229px;
+  width: 180px;
+}
+
+.porto-ansip .elemen-14-WNvyVv {
+  background-color: transparent;
+  height: 280px;
+  left: 1093px;
+  position: absolute;
+  top: 551px;
+  width: 347px;
+}
+
+.porto-ansip .exploring-the-tools-NG4oFS {
+  background-color: transparent;
+  color: var(--fuchsia-blue);
+  font-family: var(--font-family-sansita_swashed);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 516px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 2948px;
+  width: 386px;
+}
+
+.porto-ansip .group-25-NG4oFS {
+  height: 64px;
+  left: 516px;
+  top: 2888px;
+  width: 409px;
+}
+
+.porto-ansip .x1-1-xOxwff {
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  width: 73px;
+}
+
+.porto-ansip .our-favorite-tools-xOxwff {
+  background-color: transparent;
+  height: 45px;
+  left: 71px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 19px;
+  width: 336px;
+}
+
+.porto-ansip .group-32-NG4oFS {
+  background-color: transparent;
+  height: 1118px;
+  left: 1px;
+  position: absolute;
+  top: 3612px;
+  width: 1439px;
+}
+
+.porto-ansip .group-23-NG4oFS {
+  background-color: transparent;
+  height: 174px;
+  left: -113px;
+  position: absolute;
+  top: 1765px;
+  width: 1743px;
+}
+
+.porto-ansip .rectangle-3-D8lGlg {
+  background-color: var(--lavender);
+  height: 73px;
+  left: 76px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(3.47deg);
+  width: 1666px;
+}
+
+.porto-ansip .rectangle-2-D8lGlg {
+  background-color: var(--violet-red);
+  height: 73px;
+  left: 0px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(0.02deg);
+  width: 1666px;
+}
+
+.porto-ansip .group-25-sxHvBZ {
+  height: 68px;
+  left: 83px;
+  top: 1821px;
+  width: 1351px;
+}
+
+.porto-ansip .wireframe-bkA5Ko {
+  left: 1063px;
+  top: 15px;
+}
+
+.porto-ansip .education-bkA5Ko {
+  height: 35px;
+  left: 434px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .app-design-bkA5Ko {
+  height: 35px;
+  left: 84px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .dashboard-bkA5Ko {
+  left: 740px;
+  top: 20px;
+}
+
+.porto-ansip .elemen-7-NG4oFS {
+  background-color: transparent;
+  height: 236px;
+  left: 1115px;
+  position: absolute;
+  top: 152px;
+  width: 243px;
+}
+
+.porto-ansip .x1-1-NG4oFS {
+  height: 49px;
+  left: 176px;
+  top: 1112px;
+  width: 60px;
+}
+
+.porto-ansip .rectangle-10-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 37px;
+  height: 364px;
+  left: 21px;
+  position: absolute;
+  top: 1271px;
+  width: 451px;
+}
+
+.porto-ansip .rectangle-11-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 37px;
+  height: 364px;
+  left: 494px;
+  position: absolute;
+  top: 1271px;
+  width: 451px;
+}
+
+.porto-ansip .rectangle-12-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 37px;
+  height: 364px;
+  left: 968px;
+  position: absolute;
+  top: 1271px;
+  width: 451px;
+}
+
+.porto-ansip .x1-2-NG4oFS {
+  background-color: transparent;
+  height: 158px;
+  left: 10px;
+  position: absolute;
+  top: 1269px;
+  width: 202px;
+}
+
+.porto-ansip .x1-3-NG4oFS {
+  background-color: transparent;
+  height: 154px;
+  left: 494px;
+  position: absolute;
+  top: 1271px;
+  width: 205px;
+}
+
+.porto-ansip .x1-4-NG4oFS {
+  background-color: transparent;
+  height: 170px;
+  left: 968px;
+  position: absolute;
+  top: 1271px;
+  width: 184px;
+}
+
+.porto-ansip .group-14-NG4oFS {
+  height: 77px;
+  left: 112px;
+  top: 64px;
+  width: 139px;
+}
+
+.porto-ansip .rectangle-2-MV0tqa {
+  background-color: #ffffff1f;
+  border-radius: 39px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 77px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 139px;
+}
+
+.porto-ansip .ansyf-logo-trans-1-MV0tqa {
+  left: 5px;
+  top: 0px;
+}
+
+.porto-ansip .navbar-NG4oFS {
+  background-color: transparent;
+  height: 78px;
+  left: 316px;
+  position: absolute;
+  top: 46px;
+  width: 824px;
+}
+
+.porto-ansip .rectangle-3-mkyTOs {
+  background-color: #e8f3ff;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 58px;
+  left: 18px;
+  position: absolute;
+  top: 10px;
+  width: 145px;
+}
+
+.porto-ansip .rectangle-2-mkyTOs {
+  background-color: #ffffff42;
+  border-radius: 39px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 78px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 824px;
+}
+
+.porto-ansip .home-mkyTOs {
+  background-color: transparent;
+  color: #185da3;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 59px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .about-mkyTOs {
+  background-color: transparent;
+  height: auto;
+  left: 370px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .service-mkyTOs {
+  background-color: transparent;
+  height: auto;
+  left: 217px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .projects-mkyTOs {
+  background-color: transparent;
+  height: auto;
+  left: 506px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .testimonies-mkyTOs {
+  background-color: transparent;
+  height: auto;
+  left: 645px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .group-14-sxHvBZ {
+  height: 90px;
+  left: 1190px;
+  top: 46px;
+  width: 194px;
+}
+
+.porto-ansip .rectangle-4-cSLUen {
+  background-color: #ffffff42;
+  border-radius: 39px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 90px;
+  width: 194px;
+}
+
+.porto-ansip .contact-cSLUen {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  top: 24px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .group-14-sDji30 {
+  height: 174px;
+  left: -152px;
+  top: 2685px;
+  width: 1743px;
+}
+
+.porto-ansip .rectangle-3-BWprFJ {
+  background-color: var(--lavender);
+  height: 73px;
+  left: 76px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(3.47deg);
+  width: 1666px;
+}
+
+.porto-ansip .rectangle-2-BWprFJ {
+  background-color: var(--violet-red);
+  height: 73px;
+  left: 0px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(0.02deg);
+  width: 1666px;
+}
+
+.porto-ansip .group-26-NG4oFS {
+  background-color: transparent;
+  height: 68px;
+  left: 98px;
+  position: absolute;
+  top: 2741px;
+  width: 1351px;
+}
+
+.porto-ansip .wireframe-zSNo1E {
+  left: 1063px;
+  top: 15px;
+}
+
+.porto-ansip .education-zSNo1E {
+  height: 35px;
+  left: 434px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .app-design-zSNo1E {
+  height: 35px;
+  left: 84px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .dashboard-zSNo1E {
+  left: 740px;
+  top: 20px;
+}
+
+.porto-ansip .group-30-NG4oFS {
+  height: 174px;
+  left: -114px;
+  top: 3511px;
+  width: 1743px;
+}
+
+.porto-ansip .rectangle-3-fgPWCQ {
+  background-color: var(--lavender);
+  height: 73px;
+  left: 76px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(3.47deg);
+  width: 1666px;
+}
+
+.porto-ansip .rectangle-2-fgPWCQ {
+  background-color: var(--violet-red);
+  height: 73px;
+  left: 0px;
+  position: absolute;
+  top: 50px;
+  transform: rotate(0.02deg);
+  width: 1666px;
+}
+
+.porto-ansip .group-31-NG4oFS {
+  left: 86px;
+  top: 3562px;
+}
+
+.porto-ansip .wireframe-RrfKFk {
+  left: 1063px;
+  top: 15px;
+}
+
+.porto-ansip .education-RrfKFk {
+  height: 35px;
+  left: 434px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .app-design-RrfKFk {
+  height: 35px;
+  left: 84px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .dashboard-RrfKFk {
+  left: 740px;
+  top: 20px;
+}
+
+.porto-ansip .our-last-NG4oFS {
+  background-color: transparent;
+  color: var(--violet-red);
+  font-family: var(--font-family-roboto_mono);
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  height: 64px;
+  left: 143px;
+  letter-spacing: -0.25px;
+  line-height: 64px;
+  position: absolute;
+  text-align: center;
+  top: 3811px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .group-29-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 477px;
+  position: absolute;
+  top: 3012px;
+  width: 484px;
+}
+
+.porto-ansip .behind-our-design-FUtP7q {
+  background-color: transparent;
+  color: var(--blue-jeans);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 482px;
+}
+
+.porto-ansip .rectangle-13-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 108px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .figma-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 126px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.porto-ansip .ellipse-6-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 126px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x98-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 139px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .rectangle-14-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 330px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .sketch-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 348px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.porto-ansip .ellipse-7-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 348px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x85-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 361px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .rectangle-15-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 559px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .canva-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 577px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.porto-ansip .ellipse-8-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 577px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x96-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 590px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .rectangle-16-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 782px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .dribble-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 793px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 145px;
+}
+
+.porto-ansip .ellipse-9-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 800px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x82-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 813px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .rectangle-17-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 1001px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .vs-code-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 1010px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.porto-ansip .ellipse-10-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 1019px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x91-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 1032px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .rectangle-18-NG4oFS {
+  background-color: var(--alto-2);
+  border-radius: 65px;
+  height: 192px;
+  left: 1223px;
+  position: absolute;
+  top: 3108px;
+  width: 147px;
+}
+
+.porto-ansip .android-s-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 1231px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3305px;
+  white-space: nowrap;
+  width: 188px;
+}
+
+.porto-ansip .ellipse-11-NG4oFS {
+  background-color: var(--white);
+  border-radius: 55.5px;
+  height: 111px;
+  left: 1241px;
+  position: absolute;
+  top: 3119px;
+  width: 111px;
+}
+
+.porto-ansip .x90-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 1254px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3229px;
+  width: 101px;
+}
+
+.porto-ansip .x3-2-NG4oFS {
+  background-color: transparent;
+  height: 216px;
+  left: 123px;
+  position: absolute;
+  top: 3080px;
+  width: 119px;
+}
+
+.porto-ansip .x3-1-NG4oFS {
+  background-color: transparent;
+  height: 171px;
+  left: 327px;
+  position: absolute;
+  top: 3094px;
+  width: 152px;
+}
+
+.porto-ansip .x3-3-NG4oFS {
+  background-color: transparent;
+  height: 142px;
+  left: 580px;
+  position: absolute;
+  top: 3104px;
+  width: 105px;
+}
+
+.porto-ansip .x3-4-NG4oFS {
+  background-color: transparent;
+  height: 138px;
+  left: 805px;
+  position: absolute;
+  top: 3097px;
+  width: 108px;
+}
+
+.porto-ansip .x3-5-NG4oFS {
+  background-color: transparent;
+  height: 165px;
+  left: 1002px;
+  position: absolute;
+  top: 3100px;
+  width: 147px;
+}
+
+.porto-ansip .x3-6-NG4oFS {
+  background-color: transparent;
+  height: 121px;
+  left: 1232px;
+  position: absolute;
+  top: 3112px;
+  width: 132px;
+}
+
+.porto-ansip .group-33-NG4oFS {
+  background-color: transparent;
+  height: 54px;
+  left: 1066px;
+  position: absolute;
+  top: 3797px;
+  width: 330px;
+}
+
+.porto-ansip .rectangle-5-A1RxAl {
+  height: 54px;
+  left: 113px;
+  width: 217px;
+}
+
+.porto-ansip .rectangle-4-A1RxAl {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 54px;
+  width: 249px;
+}
+
+.porto-ansip .group-16-A1RxAl {
+  height: 31px;
+  left: 275px;
+  top: 10px;
+  transform: rotate(-54.47deg);
+  width: 31px;
+}
+
+.porto-ansip .ellipse-4-MRHtIs {
+  border-radius: 15.58px/15.72px;
+  height: 31px;
+  left: 0px;
+  top: -0px;
+  width: 31px;
+}
+
+.porto-ansip .play_arrow_filled-MRHtIs {
+  height: 19px;
+  left: 6px;
+  top: 6px;
+  transform: rotate(54.47deg);
+  width: 19px;
+}
+
+.porto-ansip .view-all-project-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 1082px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3806px;
+  width: 280px;
+}
+
+.porto-ansip .rectangle-19-NG4oFS {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 24px;
+  left: 162px;
+  position: absolute;
+  top: 4452px;
+  width: 115px;
+}
+
+.porto-ansip .rectangle-22-NG4oFS {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 24px;
+  left: 286px;
+  position: absolute;
+  top: 4452px;
+  width: 139px;
+}
+
+.porto-ansip .rectangle-23-NG4oFS {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 24px;
+  left: 433px;
+  position: absolute;
+  top: 4452px;
+  width: 122px;
+}
+
+.porto-ansip .app-design-sxHvBZ {
+  height: 15px;
+  left: 167px;
+  top: 4456px;
+  white-space: nowrap;
+  width: 122px;
+}
+
+.porto-ansip .uiux-design-NG4oFS {
+  background-color: transparent;
+  height: 19px;
+  left: 293px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4454px;
+  width: 136px;
+}
+
+.porto-ansip .wirefaming-NG4oFS {
+  background-color: transparent;
+  height: 9px;
+  left: 441px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4459px;
+  white-space: nowrap;
+  width: 108px;
+}
+
+.porto-ansip .ansyif-is-a-dedicate-NG4oFS {
+  background-color: transparent;
+  height: 128px;
+  left: 102px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4986px;
+  width: 553px;
+}
+
+.porto-ansip .x62-857-2419-4786-NG4oFS {
+  background-color: transparent;
+  height: 43px;
+  left: 189px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5149px;
+  width: 323px;
+}
+
+.porto-ansip .x62-898-8124-949-NG4oFS {
+  background-color: transparent;
+  height: 43px;
+  left: 189px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5243px;
+  width: 323px;
+}
+
+.porto-ansip .ansyifsltiongmailcom-NG4oFS {
+  background-color: transparent;
+  cursor: pointer;
+  height: 43px;
+  left: 189px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 5336px;
+  width: 436px;
+}
+
+.porto-ansip .your-name-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4870px;
+  width: 166px;
+}
+
+.porto-ansip .ex-an-syif-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 4919px;
+  width: 166px;
+}
+
+.porto-ansip .examplegmailcom-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1059px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 4919px;
+  width: 273px;
+}
+
+.porto-ansip .rectangle-24-NG4oFS {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 24px;
+  left: 810px;
+  position: absolute;
+  top: 4452px;
+  width: 115px;
+}
+
+.porto-ansip .education-sxHvBZ {
+  height: 15px;
+  left: 820px;
+  top: 4456px;
+  white-space: nowrap;
+  width: 122px;
+}
+
+.porto-ansip .rectangle-25-NG4oFS {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 24px;
+  left: 932px;
+  position: absolute;
+  top: 4452px;
+  width: 130px;
+}
+
+.porto-ansip .study-group-NG4oFS {
+  background-color: transparent;
+  height: 15px;
+  left: 942px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4456px;
+  white-space: nowrap;
+  width: 122px;
+}
+
+.porto-ansip .group-34-NG4oFS {
+  background-color: transparent;
+  height: 64px;
+  left: 105px;
+  position: absolute;
+  top: 4807px;
+  width: 376px;
+}
+
+.porto-ansip .x1-1-rjo8Fa {
+  height: 56px;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+}
+
+.porto-ansip .contac-us-rjo8Fa {
+  background-color: transparent;
+  height: 45px;
+  left: 65px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 19px;
+  width: 309px;
+}
+
+.porto-ansip .group-37-NG4oFS {
+  background-color: transparent;
+  height: 64px;
+  left: 533px;
+  position: absolute;
+  top: 5772px;
+  width: 440px;
+}
+
+.porto-ansip .x1-1-cXyod0 {
+  height: 56px;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+}
+
+.porto-ansip .clients-testimonials-cXyod0 {
+  background-color: transparent;
+  height: 45px;
+  left: 65px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 19px;
+  width: 373px;
+}
+
+.porto-ansip .group-35-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 102px;
+  position: absolute;
+  top: 4866px;
+  width: 408px;
+}
+
+.porto-ansip .lets-talk-for-YkVlK6 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 406px;
+}
+
+.porto-ansip .your-NG4oFS {
+  background-color: transparent;
+  height: 53px;
+  left: 448px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4882px;
+  white-space: nowrap;
+  width: 151px;
+}
+
+.porto-ansip .next-projects-NG4oFS {
+  background-color: transparent;
+  height: 53px;
+  left: 102px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4935px;
+  white-space: nowrap;
+  width: 444px;
+}
+
+.porto-ansip .client-testimonials-NG4oFS {
+  background-color: transparent;
+  height: 53px;
+  left: 501px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5919px;
+  white-space: nowrap;
+  width: 553px;
+}
+
+.porto-ansip .rectangle-26-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 674px;
+  position: absolute;
+  top: 4910px;
+  width: 340px;
+}
+
+.porto-ansip .email-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1050px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4870px;
+  width: 166px;
+}
+
+.porto-ansip .rectangle-27-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 1043px;
+  position: absolute;
+  top: 4910px;
+  width: 340px;
+}
+
+.porto-ansip .phone-NG4oFS {
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  text-align: left;
+  top: 4995px;
+  width: 166px;
+}
+
+.porto-ansip .x082819384789-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 5044px;
+  width: 236px;
+}
+
+.porto-ansip .select-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1059px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.24;
+  position: absolute;
+  text-align: left;
+  top: 5044px;
+  width: 98px;
+}
+
+.porto-ansip .rectangle-28-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 674px;
+  position: absolute;
+  top: 5035px;
+  width: 340px;
+}
+
+.porto-ansip .im-interested-in-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1050px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4995px;
+  width: 240px;
+}
+
+.porto-ansip .rectangle-29-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 1043px;
+  position: absolute;
+  top: 5035px;
+  width: 340px;
+}
+
+.porto-ansip .budget-range-usd-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5123px;
+  width: 310px;
+}
+
+.porto-ansip .you-message-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5251px;
+  width: 310px;
+}
+
+.porto-ansip .select-range-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 5172px;
+  width: 236px;
+}
+
+.porto-ansip .type-here-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 681px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 5300px;
+  width: 236px;
+}
+
+.porto-ansip .select-country-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1059px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.24;
+  position: absolute;
+  text-align: left;
+  top: 5172px;
+  width: 217px;
+}
+
+.porto-ansip .rectangle-30-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 674px;
+  position: absolute;
+  top: 5163px;
+  width: 340px;
+}
+
+.porto-ansip .rectangle-32-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 265px;
+  left: 674px;
+  position: absolute;
+  top: 5291px;
+  width: 709px;
+}
+
+.porto-ansip .arrow-down-NG4oFS {
+  left: 964px;
+  top: 5183px;
+}
+
+.porto-ansip .country-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 1050px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5123px;
+  width: 240px;
+}
+
+.porto-ansip .rectangle-31-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 1043px;
+  position: absolute;
+  top: 5163px;
+  width: 340px;
+}
+
+.porto-ansip .arrow-down-sxHvBZ {
+  left: 1334px;
+  top: 5183px;
+}
+
+.porto-ansip .arrow-down-sDji30 {
+  left: 1334px;
+  top: 5055px;
+}
+
+.porto-ansip .group-36-NG4oFS {
+  background-color: transparent;
+  height: 54px;
+  left: 476px;
+  position: absolute;
+  top: 5502px;
+  width: 175px;
+}
+
+.porto-ansip .rectangle-5-IFRTxu {
+  height: 54px;
+  left: 60px;
+  width: 115px;
+}
+
+.porto-ansip .rectangle-4-IFRTxu {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 54px;
+  width: 132px;
+}
+
+.porto-ansip .group-16-IFRTxu {
+  height: 31px;
+  left: 137px;
+  top: 11px;
+  transform: rotate(0.72deg);
+  width: 28px;
+}
+
+.porto-ansip .ellipse-4-M1mtC6 {
+  border-radius: 14.14px/15.71px;
+  height: 31px;
+  left: 0px;
+  top: 0px;
+  width: 28px;
+}
+
+.porto-ansip .play_arrow_filled-M1mtC6 {
+  height: 20px;
+  left: 6px;
+  top: 6px;
+  transform: rotate(-0.72deg);
+  width: 18px;
+}
+
+.porto-ansip .submit-NG4oFS {
+  background-color: transparent;
+  height: 35px;
+  left: 495px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5510px;
+  width: 280px;
+}
+
+.porto-ansip .ellipse-14-NG4oFS {
+  background-color: var(--azalea);
+  border-radius: 38.5px;
+  height: 77px;
+  left: 91px;
+  position: absolute;
+  top: 5132px;
+  width: 77px;
+}
+
+.porto-ansip .ellipse-15-NG4oFS {
+  background-color: var(--azalea);
+  border-radius: 38.5px;
+  height: 77px;
+  left: 91px;
+  position: absolute;
+  top: 5227px;
+  width: 77px;
+}
+
+.porto-ansip .ellipse-16-NG4oFS {
+  background-color: var(--azalea);
+  border-radius: 38.5px;
+  height: 77px;
+  left: 91px;
+  position: absolute;
+  top: 5323px;
+  width: 77px;
+}
+
+.porto-ansip .ellipse-17-NG4oFS {
+  background-color: var(--azalea);
+  border-radius: 38.5px;
+  height: 77px;
+  left: 91px;
+  position: absolute;
+  top: 5419px;
+  width: 77px;
+}
+
+.porto-ansip .phone-sxHvBZ {
+  height: 48px;
+  left: 106px;
+  top: 5240px;
+  width: 48px;
+}
+
+.porto-ansip .services-sxHvBZ {
+  color: var(--fuchsia-blue);
+  font-family: var(--font-family-sansita_swashed);
+  font-size: 48px;
+  font-weight: 300;
+  height: auto;
+  left: 153px;
+  letter-spacing: 0.00px;
+  top: 1165px;
+  width: 182px;
+}
+
+.porto-ansip .group-38-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 439px;
+  position: absolute;
+  top: 5840px;
+  width: 702px;
+}
+
+.porto-ansip .the-impact-of-our-work-tBa9SN {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 700px;
+}
+
+.porto-ansip .rectangle-33-NG4oFS {
+  background-color: var(--white);
+  height: 307px;
+  left: -233px;
+  position: absolute;
+  top: 6143px;
+  width: 583px;
+}
+
+.porto-ansip .rectangle-35-NG4oFS {
+  background-color: var(--white);
+  height: 307px;
+  left: 1121px;
+  position: absolute;
+  top: 6143px;
+  width: 583px;
+}
+
+.porto-ansip .rectangle-34-NG4oFS {
+  background-color: var(--white);
+  height: 343px;
+  left: 378px;
+  position: absolute;
+  top: 6019px;
+  width: 714px;
+}
+
+.porto-ansip .ellipse-18-NG4oFS {
+  background-color: #a7aef9;
+  border-radius: 37px;
+  height: 74px;
+  left: 646px;
+  position: absolute;
+  top: 6405px;
+  width: 74px;
+}
+
+.porto-ansip .ellipse-19-NG4oFS {
+  background-color: var(--hot-pink);
+  border-radius: 37px;
+  height: 74px;
+  left: 752px;
+  position: absolute;
+  top: 6404px;
+  width: 74px;
+}
+
+.porto-ansip .star_filled-NG4oFS {
+  left: 398px;
+  top: 6040px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-sxHvBZ {
+  left: 432px;
+  top: 6040px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-sDji30 {
+  left: 469px;
+  top: 6040px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-gIOCXM {
+  left: 504px;
+  top: 6040px;
+  width: 30px;
+}
+
+.porto-ansip .star_filled-PRYAw9 {
+  left: 539px;
+  top: 6040px;
+  width: 31px;
+}
+
+.porto-ansip .saya-sangat-puas-den-NG4oFS {
+  left: 397px;
+  top: 6088px;
+}
+
+.porto-ansip .image-NG4oFS {
+  left: 397px;
+  top: 6247px;
+}
+
+.porto-ansip .image-sxHvBZ {
+  left: 1140px;
+  top: 6337px;
+}
+
+.porto-ansip .imanuel-xander-NG4oFS {
+  background-color: transparent;
+  height: 33px;
+  left: 1255px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 6351px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .founder-pt-flancre-NG4oFS {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 200;
+  height: 23px;
+  left: 1257px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 6390px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .star_filled-V9EBqx {
+  left: 1149px;
+  top: 6153px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-jgdcSP {
+  left: 1183px;
+  top: 6153px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-wmmbHO {
+  left: 1220px;
+  top: 6153px;
+  width: 31px;
+}
+
+.porto-ansip .star_filled-GiAZHl {
+  left: 1255px;
+  top: 6153px;
+  width: 30px;
+}
+
+.porto-ansip .star_filled-8RFeQx {
+  left: 1290px;
+  top: 6153px;
+  width: 31px;
+}
+
+.porto-ansip .saya-sangat-puas-den-sxHvBZ {
+  left: 1147px;
+  top: 6190px;
+}
+
+.porto-ansip .saya-sangat-puas-den-sDji30 {
+  left: -342px;
+  top: 6188px;
+}
+
+.porto-ansip .group-39-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 91px;
+  position: absolute;
+  top: 6770px;
+  width: 163px;
+}
+
+.porto-ansip .lets-fEIK2z {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 161px;
+}
+
+.porto-ansip .group-40-NG4oFS {
+  background-color: transparent;
+  height: 62px;
+  left: 454px;
+  position: absolute;
+  top: 6770px;
+  width: 163px;
+}
+
+.porto-ansip .there-9ppYdB {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 161px;
+}
+
+.porto-ansip .connect-NG4oFS {
+  background-color: transparent;
+  height: 53px;
+  left: 225px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 6781px;
+  white-space: nowrap;
+  width: 240px;
+}
+
+.porto-ansip .navigation-NG4oFS {
+  background-color: transparent;
+  height: 27px;
+  left: 646px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 6899px;
+  width: 131px;
+}
+
+.porto-ansip .contact-NG4oFS {
+  height: 27px;
+  left: 839px;
+  letter-spacing: 3.00px;
+  top: 6899px;
+  width: 131px;
+}
+
+.porto-ansip .get-the-latest-information-NG4oFS {
+  background-color: transparent;
+  height: 27px;
+  left: 839px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 7103px;
+  width: 290px;
+}
+
+.porto-ansip .line-1-NG4oFS {
+  background-color: transparent;
+  height: 1px;
+  left: 88px;
+  object-fit: cover;
+  position: absolute;
+  top: 6855px;
+  width: 1234px;
+}
+
+.porto-ansip .group-41-NG4oFS {
+  background-color: transparent;
+  height: 54px;
+  left: 992px;
+  position: absolute;
+  top: 6774px;
+  width: 330px;
+}
+
+.porto-ansip .rectangle-5-T0OqQw {
+  height: 54px;
+  left: 113px;
+  width: 217px;
+}
+
+.porto-ansip .rectangle-4-T0OqQw {
+  background-color: var(--blue-jeans);
+  border-radius: 100px;
+  height: 54px;
+  width: 249px;
+}
+
+.porto-ansip .group-16-T0OqQw {
+  height: 31px;
+  left: 275px;
+  top: 10px;
+  transform: rotate(1.76deg);
+  width: 31px;
+}
+
+.porto-ansip .ellipse-4-1L31hb {
+  border-radius: 15.58px/15.72px;
+  height: 31px;
+  left: -0px;
+  top: -0px;
+  width: 31px;
+}
+
+.porto-ansip .play_arrow_filled-1L31hb {
+  height: 20px;
+  left: 6px;
+  top: 6px;
+  transform: rotate(-1.76deg);
+  width: 20px;
+}
+
+.porto-ansip .view-all-service-sxHvBZ {
+  left: 1008px;
+  top: 6783px;
+}
+
+.porto-ansip .ansyf-logo-trans-1-NG4oFS {
+  left: 107px;
+  top: 6896px;
+}
+
+.porto-ansip .an-syif-solution-NG4oFS {
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 30px;
+  font-weight: 600;
+  height: 45px;
+  left: 261px;
+  letter-spacing: 3.00px;
+  top: 6907px;
+  width: 263px;
+}
+
+.porto-ansip .ellipse-20-NG4oFS {
+  background-color: var(--pattens-blue);
+  border-radius: 29px;
+  height: 58px;
+  left: 205px;
+  position: absolute;
+  top: 7114px;
+  width: 58px;
+}
+
+.porto-ansip .ellipse-21-NG4oFS {
+  background-color: var(--pattens-blue);
+  border-radius: 29px;
+  height: 58px;
+  left: 287px;
+  position: absolute;
+  top: 7114px;
+  width: 58px;
+}
+
+.porto-ansip .ellipse-22-NG4oFS {
+  background-color: var(--pattens-blue);
+  border-radius: 29px;
+  height: 58px;
+  left: 371px;
+  position: absolute;
+  top: 7114px;
+  width: 58px;
+}
+
+.porto-ansip .rectangle-36-NG4oFS {
+  background-color: var(--alto);
+  border-radius: 13px;
+  height: 59px;
+  left: 839px;
+  position: absolute;
+  top: 7141px;
+  width: 340px;
+}
+
+.porto-ansip .rectangle-37-NG4oFS {
+  background-color: #cebbfa;
+  border-radius: 13px;
+  height: 59px;
+  left: 1159px;
+  position: absolute;
+  top: 7141px;
+  width: 73px;
+}
+
+.porto-ansip .play_arrow_filled-NG4oFS {
+  height: 25px;
+  left: 1179px;
+  top: 7158px;
+  width: 32px;
+}
+
+.porto-ansip .email-address-NG4oFS {
+  background-color: transparent;
+  height: 39px;
+  left: 855px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  opacity: 0.36;
+  position: absolute;
+  text-align: left;
+  top: 7151px;
+  width: 236px;
+}
+
+.porto-ansip .group-42-NG4oFS {
+  background-color: transparent;
+  height: 2815px;
+  left: 0px;
+  position: absolute;
+  top: 4531px;
+  width: 1459px;
+}
+
+.porto-ansip .arrow-right-AVdQDI {
+  height: 38px;
+  left: 603px;
+  top: 0px;
+  width: 48px;
+}
+
+.porto-ansip .icon-AVdQDI {
+  background-color: transparent;
+  height: 32px;
+  left: 1249px;
+  position: absolute;
+  top: 3px;
+  width: 32px;
+}
+
+.porto-ansip .arrow-down-AVdQDI {
+  left: 1248px;
+  top: 613px;
+}
+
+.porto-ansip .phone-AVdQDI {
+  height: 48px;
+  left: 109px;
+  top: 613px;
+  width: 48px;
+}
+
+.porto-ansip .mail-AVdQDI {
+  background-color: transparent;
+  height: 56px;
+  left: 100px;
+  position: absolute;
+  top: 802px;
+  width: 57px;
+}
+
+.porto-ansip .instagram-AVdQDI {
+  height: 48px;
+  left: 104px;
+  top: 905px;
+  width: 48px;
+}
+
+.porto-ansip .ansyifs0lution-AVdQDI {
+  background-color: transparent;
+  height: 33px;
+  left: 185px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 912px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .anne-siyanic-AVdQDI {
+  background-color: transparent;
+  height: 33px;
+  left: 512px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1731px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .x50-AVdQDI {
+  left: 582px;
+  top: 1512px;
+}
+
+.porto-ansip .x50-ycmj5B {
+  left: 1333px;
+  top: 1625px;
+}
+
+.porto-ansip .arrow-right-ycmj5B {
+  height: 48px;
+  left: 766px;
+  top: 1886px;
+  width: 48px;
+}
+
+.porto-ansip .arrow-left-AVdQDI {
+  background-color: transparent;
+  height: 48px;
+  left: 659px;
+  position: absolute;
+  top: 1886px;
+  width: 48px;
+}
+
+.porto-ansip .founder-cv-diacso-AVdQDI {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-josefin_sans);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 200;
+  height: 23px;
+  left: 514px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 1770px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .group-30-AVdQDI {
+  height: 74px;
+  left: 0px;
+  top: 2103px;
+  width: 1439px;
+}
+
+.porto-ansip .rectangle-2-Mhr8RK {
+  background-color: var(--violet-red);
+  height: 73px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  transform: rotate(0.02deg);
+  width: 1439px;
+}
+
+.porto-ansip .group-31-AVdQDI {
+  left: 49px;
+  top: 2104px;
+}
+
+.porto-ansip .wireframe-Rb8XoX {
+  left: 1063px;
+  top: 15px;
+}
+
+.porto-ansip .education-Rb8XoX {
+  height: 35px;
+  left: 434px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .app-design-Rb8XoX {
+  height: 35px;
+  left: 84px;
+  top: 15px;
+  width: 280px;
+}
+
+.porto-ansip .dashboard-Rb8XoX {
+  left: 740px;
+  top: 20px;
+}
+
+.porto-ansip .ingin-tahu-lebih-ban-AVdQDI {
+  background-color: transparent;
+  height: 81px;
+  left: 107px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 2467px;
+  width: 509px;
+}
+
+.porto-ansip .coppyright-2025-an-s-AVdQDI {
+  background-color: transparent;
+  color: transparent;
+  font-family: var(--font-family-josefin_sans);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+  height: 45px;
+  left: 35px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 2770px;
+  width: 518px;
+}
+
+.porto-ansip .span0-7r5KPh {
+  font-style: normal;
+  letter-spacing: 0.57px;
+}
+
+.porto-ansip .span1-7r5KPh {
+  color: var(--violet-red);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.57px;
+}
+
+.porto-ansip .span2-7r5KPh {
+  font-style: normal;
+  letter-spacing: 0.57px;
+}
+
+.porto-ansip .user-team-conditions-privacy-policy-AVdQDI {
+  background-color: transparent;
+  height: 40px;
+  left: 951px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 2772px;
+  width: 448px;
+}
+
+.porto-ansip .home-service-about-p-AVdQDI {
+  background-color: transparent;
+  height: 247px;
+  left: 644px;
+  letter-spacing: 3.00px;
+  line-height: 36.7px;
+  position: absolute;
+  text-align: left;
+  top: 2419px;
+  width: 119px;
+}
+
+.porto-ansip .x62-857-2419-4786-62-AVdQDI {
+  background-color: transparent;
+  height: 129px;
+  left: 838px;
+  letter-spacing: 3.00px;
+  line-height: 36.7px;
+  position: absolute;
+  text-align: left;
+  top: 2404px;
+  width: 273px;
+}
+
+.porto-ansip .span0-nruOS2 {
+  letter-spacing: 0.51px;
+}
+
+.porto-ansip .span1-nruOS2 {
+  letter-spacing: 0.51px;
+  text-decoration: underline;
+}
+
+.porto-ansip .image-3-AVdQDI {
+  background-color: transparent;
+  height: 34px;
+  left: 88px;
+  position: absolute;
+  top: 2600px;
+  width: 113px;
+}
+
+.porto-ansip .youtube-AVdQDI {
+  background-color: transparent;
+  height: 42px;
+  left: 213px;
+  position: absolute;
+  top: 2592px;
+  width: 42px;
+}
+
+.porto-ansip .instagram-ycmj5B {
+  height: 41px;
+  left: 294px;
+  top: 2592px;
+  width: 45px;
+}
+
+.porto-ansip .linkedin-AVdQDI {
+  background-color: transparent;
+  height: 38px;
+  left: 382px;
+  position: absolute;
+  top: 2592px;
+  width: 38px;
+}
+
+.porto-ansip .an-syif-solution {
+  background-color: transparent;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.porto-ansip .ansyf-logo-trans-1 {
+  background-color: transparent;
+  height: 65px;
+  object-fit: cover;
+  position: absolute;
+  width: 128px;
+}
+
+.porto-ansip .app-design {
+  background-color: transparent;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.porto-ansip .arrow-down {
+  background-color: transparent;
+  height: 20px;
+  position: absolute;
+  width: 33px;
+}
+
+.porto-ansip .arrow-right {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .contact {
+  background-color: transparent;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.porto-ansip .dashboard {
+  background-color: transparent;
+  height: 24px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.porto-ansip .education {
+  background-color: transparent;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.porto-ansip .elemen-10 {
+  background-color: transparent;
+  height: 62px;
+  left: 351px;
+  position: absolute;
+  top: 6px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-11 {
+  background-color: transparent;
+  height: 62px;
+  left: 656px;
+  position: absolute;
+  top: 6px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-12 {
+  background-color: transparent;
+  height: 62px;
+  left: 984px;
+  position: absolute;
+  top: 0px;
+  width: 78px;
+}
+
+.porto-ansip .elemen-9 {
+  background-color: transparent;
+  height: 62px;
+  left: 0px;
+  position: absolute;
+  top: 6px;
+  width: 78px;
+}
+
+.porto-ansip .ellipse-4 {
+  background-color: var(--white);
+  position: absolute;
+}
+
+.porto-ansip .group-10 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .group-12 {
+  background-color: transparent;
+  height: 67px;
+  position: absolute;
+}
+
+.porto-ansip .group-14 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .group-16 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .group-25 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .group-30 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .group-31 {
+  background-color: transparent;
+  height: 68px;
+  position: absolute;
+  width: 1351px;
+}
+
+.porto-ansip .group-9 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .image {
+  background-color: transparent;
+  height: 100px;
+  object-fit: cover;
+  position: absolute;
+  width: 100px;
+}
+
+.porto-ansip .instagram {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .learn-more {
+  background-color: transparent;
+  height: 35px;
+  left: 0px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 193px;
+}
+
+.porto-ansip .phone {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .play_arrow_filled {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .rectangle-4 {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.porto-ansip .rectangle-5 {
+  background-color: var(--violet-red-2);
+  border-radius: 100px;
+  position: absolute;
+  top: 0px;
+}
+
+.porto-ansip .saya-sangat-puas-den {
+  background-color: transparent;
+  height: 154px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: 662px;
+}
+
+.porto-ansip .services {
+  background-color: transparent;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+}
+
+.porto-ansip .star_filled {
+  background-color: transparent;
+  height: 30px;
+  position: absolute;
+}
+
+.porto-ansip .view-all-service {
+  background-color: transparent;
+  height: 35px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: 280px;
+}
+
+.porto-ansip .welcome {
+  overflow: hidden;
+  position: absolute;
+  width: 1440px;
+}
+
+.porto-ansip .wireframe {
+  background-color: transparent;
+  height: 35px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: 280px;
+}
+
+.porto-ansip .x1-1 {
+  background-color: transparent;
+  position: absolute;
+}
+
+.porto-ansip .x50 {
+  background-color: transparent;
+  height: 33px;
+  letter-spacing: 3.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="porto-ansip"><div class="container-center-horizontal"><div class="porto-ansip screen " data-id="25:568"><div class="welcome-NG4oFS welcome" data-id="89:525"></div><div class="rectangle-3-NG4oFS" data-id="91:354"></div><img class="group-9-NG4oFS group-9" data-id="25:574" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67a9b6c404bf46bb3d5cf2b6/img/group-9.png" alt="Group 9"><div class="group-11-NG4oFS" data-id="25:577"><div class="rectangle-3-3OdDw6" data-id="25:578"></div><div class="rectangle-2-3OdDw6" data-id="25:579"></div></div><div class="group-10-NG4oFS group-10" data-id="25:580"><img class="elemen-1-YOGwEy" data-id="25:581" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-1-1@2x.png" alt="elemen 1"><div class="hello-there-YOGwEy" data-id="25:582">Hello There!</div></div><div class="group-12-NG4oFS group-12" data-id="25:583"><div class="rectangle-5-drUyx0 rectangle-5" data-id="25:584"></div><div class="rectangle-4-drUyx0 rectangle-4" data-id="25:586"></div><div class="group-16-drUyx0 group-16" data-id="25:769"><div class="ellipse-4-XtPWpe ellipse-4" data-id="25:768"></div><img class="play_arrow_filled-XtPWpe play_arrow_filled" data-id="25:765" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67a9b6c404bf46bb3d5cf2b6/img/play-arrow-filled.svg" alt="play_arrow_filled"></div></div><div class="group-17-NG4oFS" data-id="29:204"><div class="rectangle-5-8acB2s rectangle-5" data-id="29:205"></div><div class="rectangle-4-8acB2s rectangle-4" data-id="29:206"></div><div class="group-16-8acB2s group-16" data-id="29:207"><div class="ellipse-4-iG13lo ellipse-4" data-id="29:208"></div><img class="play_arrow_filled-iG13lo play_arrow_filled" data-id="29:209" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/play-arrow-filled-9.svg" alt="play_arrow_filled"></div></div><div class="group-13-NG4oFS" data-id="25:587"><div class="rectangle-6-GvAR1A" data-id="25:588"></div><div class="help-me-GvAR1A valign-text-middle josefinsans-extra-light-black-24px" data-id="25:589">Help Me</div></div><img class="elemen-2-NG4oFS" data-id="25:591" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-2-1@2x.png" alt="elemen 2"><img class="elemen-3-NG4oFS" data-id="25:592" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 3"><img class="elemen-4-NG4oFS" data-id="25:593" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 4"><img class="elemen-5-NG4oFS" data-id="25:594" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 5"><img class="elemen-6-NG4oFS" data-id="25:595" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 6"><div class="group-10-sxHvBZ group-10" data-id="25:596"><h1 class="title-4JzUky" data-id="25:597">solutions</h1><div class="we-create-for-education-4JzUky" data-id="25:598">We create <br>for education!</div></div><div class="group-16-NG4oFS group-16" data-id="27:316"><div class="provide-KwcMO0" data-id="29:197">| Provide</div></div><div class="wireframe-NG4oFS valign-text-middle wireframe josefinsans-normal-white-24px" data-id="25:600">Wireframe</div><div class="education-NG4oFS valign-text-middle education josefinsans-normal-white-24px" data-id="25:601">Education</div><p class="we-are-ansyif-an-edu-NG4oFS valign-text-middle josefinsans-extra-light-black-24px" data-id="25:602">We are Ansyif, an educator and education activist who is committed to creating an inspiring and enjoyable learning experience.</p><p class="we-focus-on-user-exp-NG4oFS valign-text-middle josefinsans-extra-light-black-22px" data-id="30:198">We focus on user experience through in-depth research, creating aesthetic and functional solutions. Transform your ideas into amazing digital experiences with us!</p><p class="ansyif-presents-an-a-NG4oFS valign-text-middle josefinsans-extra-light-black-22px" data-id="30:221">Ansyif presents an attractive and intuitive application design. We focus on user experience to create aesthetic and functional digital solutions. Make your ideas come true with us!</p><p class="ansyif-offers-educat-NG4oFS valign-text-middle josefinsans-extra-light-black-22px" data-id="30:234">Ansyif offers educational and training programs to improve team and client skills. With a practical approach, we help you stay ahead in the digital world. Join and develop your potential!</p><div class="view-our-portofolio-NG4oFS valign-text-middle josefinsans-medium-white-24px" data-id="25:603">View Our Portofolio</div><div class="view-all-service-NG4oFS valign-text-middle view-all-service josefinsans-medium-white-24px" data-id="29:212">View All Service</div><div class="services-NG4oFS valign-text-middle services" data-id="27:314">Services</div><div class="group-19-NG4oFS" data-id="30:223"><div class="learn-more valign-text-middle josefinsans-semi-bold-fuchsia-blue-28px" data-id="30:200">Learn More</div><img class="arrow-right-avJJj3 arrow-right" data-id="30:215" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-right-5.svg" alt="Arrow right"></div><div class="group-22-NG4oFS" data-id="30:236"><div class="learn-more valign-text-middle josefinsans-semi-bold-fuchsia-blue-28px" data-id="30:237">Learn More</div><img class="arrow-right-ncSyn9 arrow-right" data-id="30:238" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-right-5.svg" alt="Arrow right"></div><div class="group-20-NG4oFS" data-id="30:224"><div class="learn-more valign-text-middle josefinsans-semi-bold-fuchsia-blue-28px" data-id="30:225">Learn More</div><img class="arrow-right-kz1UKS arrow-right" data-id="30:226" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-right-5.svg" alt="Arrow right"></div><div class="group-18-NG4oFS" data-id="29:219"><div class="ui-ux-disign-VEbhGe valign-text-middle josefinsans-bold-hot-pink-28px" data-id="29:215">UI / UX DISIGN</div><div class="app-design-VEbhGe valign-text-middle app-design josefinsans-bold-hot-pink-28px" data-id="30:219">APP DESIGN</div></div><div class="group-21-NG4oFS" data-id="30:230"><div class="education-Q2dlg8 valign-text-middle education josefinsans-bold-hot-pink-28px" data-id="30:232">EDUCATION</div></div><div class="app-design-NG4oFS valign-text-middle app-design josefinsans-normal-white-24px" data-id="25:604">App Design</div><div class="dashboard-NG4oFS valign-text-middle dashboard josefinsans-normal-white-24px" data-id="25:605">Dashboard</div><div class="welcome-sxHvBZ welcome" data-id="30:263"><div class="group-2-WNvyVv" data-id="76:260"><img class="ellipse-3-Sdxyeu" data-id="76:261" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/ellipse-3-1.svg" alt="Ellipse 3"><div class="ellipse-1-Sdxyeu" data-id="76:262"></div><img class="ellipse-2-Sdxyeu" data-id="76:263" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/ellipse-2-1.png" alt="Ellipse 2"></div><div class="group-24-WNvyVv" data-id="30:361"><img class="x1-1-kxn5x0 x1-1" data-id="30:359" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-1-1@2x.png" alt="1 1"><div class="about-me-kxn5x0 valign-text-middle josefinsans-semi-bold-hot-pink-30px" data-id="30:358">About Me</div></div><img class="group-9-WNvyVv group-9" data-id="30:362" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/group-9-3.png" alt="Group 9"><div class="who-is-WNvyVv" data-id="30:366">Who is</div><div class="an-syif-solution-WNvyVv an-syif-solution" data-id="30:368">AnSyif Solution?</div><p class="an-syif-solution-seb-WNvyVv valign-text-middle josefinsans-extra-light-black-24px" data-id="30:370">AnSyif Solution sebuah patform solusi pemecah masalah dalam dunia digital dan edukasi. Perusahaan ternama di dunia.
+</p><div class="project-completed-WNvyVv valign-text-middle josefinsans-extra-light-black-22px" data-id="76:273">Project Completed</div><div class="industry-corporate-WNvyVv valign-text-middle josefinsans-extra-light-black-22px" data-id="76:275">Industry Corporate</div><div class="years-of-experience-WNvyVv valign-text-middle josefinsans-extra-light-black-22px" data-id="76:277">Years of Experience</div><div class="x7500-WNvyVv valign-text-middle josefinsans-normal-hot-pink-47px" data-id="76:267">7.500+</div><div class="x1200-WNvyVv valign-text-middle josefinsans-normal-hot-pink-47px" data-id="76:269">1.200+</div><div class="x19-WNvyVv valign-text-middle josefinsans-normal-hot-pink-47px" data-id="76:271">19+</div><div class="group-12-WNvyVv group-12" data-id="76:279"><div class="rectangle-5-2RdAQj rectangle-5" data-id="76:280"></div><div class="rectangle-4-2RdAQj rectangle-4" data-id="76:281"></div><div class="group-16-2RdAQj group-16" data-id="76:282"><div class="ellipse-4-rf6nNo ellipse-4" data-id="76:283"></div><img class="play_arrow_filled-rf6nNo play_arrow_filled" data-id="76:284" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67a9b6c404bf46bb3d5cf2b6/img/play-arrow-filled.svg" alt="play_arrow_filled"></div><div class="download-corp-action-2RdAQj valign-text-middle josefinsans-medium-white-24px" data-id="76:285">Download&nbsp;&nbsp;Corp Action</div></div><img class="elemen-13-WNvyVv" data-id="76:294" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-13-1@2x.png" alt="elemen 13"><img class="elemen-14-WNvyVv" data-id="76:295" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-14-1@2x.png" alt="elemen 14"></div><div class="exploring-the-tools-NG4oFS" data-id="83:256">Exploring&nbsp;&nbsp;the Tools</div><div class="group-25-NG4oFS group-25" data-id="83:252"><img class="x1-1-xOxwff x1-1" data-id="83:253" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-1-1@2x.png" alt="1 1"><div class="our-favorite-tools-xOxwff valign-text-middle josefinsans-semi-bold-hot-pink-30px" data-id="83:254">Our Favorite Tools</div></div><img class="group-32-NG4oFS" data-id="84:252" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/group-32-1.png" alt="Group 32"><div class="group-23-NG4oFS" data-id="30:321"><div class="rectangle-3-D8lGlg" data-id="30:322"></div><div class="rectangle-2-D8lGlg" data-id="30:323"></div></div><div class="group-25-sxHvBZ group-25" data-id="64:255"><img class="elemen-9" data-id="30:324" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 9"><img class="elemen-10" data-id="30:325" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 10"><img class="elemen-11" data-id="30:326" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 11"><img class="elemen-12" data-id="30:327" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 12"><div class="wireframe-bkA5Ko valign-text-middle wireframe josefinsans-normal-white-24px" data-id="30:328">Wireframe</div><div class="education-bkA5Ko valign-text-middle education josefinsans-normal-white-24px" data-id="30:329">Education</div><div class="app-design-bkA5Ko valign-text-middle app-design josefinsans-normal-white-24px" data-id="30:330">App Design</div><div class="dashboard-bkA5Ko valign-text-middle dashboard josefinsans-normal-white-24px" data-id="30:331">Dashboard</div></div><img class="elemen-7-NG4oFS" data-id="25:770" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-7-1@2x.png" alt="elemen 7"><img class="x1-1-NG4oFS x1-1" data-id="27:313" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-1-1@2x.png" alt="1 1"><div class="rectangle-10-NG4oFS" data-id="29:199"></div><div class="rectangle-11-NG4oFS" data-id="29:200"></div><div class="rectangle-12-NG4oFS" data-id="29:202"></div><img class="x1-2-NG4oFS" data-id="29:214" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-2-1@2x.png" alt="1 2"><img class="x1-3-NG4oFS" data-id="30:218" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-3-1@2x.png" alt="1 3"><img class="x1-4-NG4oFS" data-id="30:229" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-4-1@2x.png" alt="1 4"><div class="group-14-NG4oFS group-14" data-id="48:293"><div class="rectangle-2-MV0tqa" data-id="48:294"></div><img class="ansyf-logo-trans-1-MV0tqa ansyf-logo-trans-1" data-id="48:295" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/ansyf-logo-trans-1-1@2x.png" alt="ansyf Logo trans 1"></div><div class="navbar-NG4oFS" data-id="48:457"><div class="rectangle-3-mkyTOs" data-id="I48:457;48:343"></div><div class="rectangle-2-mkyTOs" data-id="I48:457;48:342"></div><div class="home-mkyTOs" data-id="I48:457;48:344">HOME</div><div class="about-mkyTOs inter-bold-black-25px" data-id="I48:457;48:373">About</div><div class="service-mkyTOs inter-bold-black-25px" data-id="I48:457;48:375">Service</div><div class="projects-mkyTOs inter-bold-black-25px" data-id="I48:457;48:377">Projects</div><div class="testimonies-mkyTOs inter-bold-black-25px" data-id="I48:457;48:379">Testimonies</div></div><div class="group-14-sxHvBZ group-14" data-id="48:481"><div class="rectangle-4-cSLUen rectangle-4" data-id="I48:481;48:468"></div><div class="contact-cSLUen contact" data-id="I48:481;48:469">Contact</div></div><div class="group-14-sDji30 group-14" data-id="64:251"><div class="rectangle-3-BWprFJ" data-id="64:252"></div><div class="rectangle-2-BWprFJ" data-id="64:253"></div></div><div class="group-26-NG4oFS" data-id="64:256"><img class="elemen-9" data-id="64:257" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 9"><img class="elemen-10" data-id="64:258" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 10"><img class="elemen-11" data-id="64:259" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 11"><img class="elemen-12" data-id="64:260" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 12"><div class="wireframe-zSNo1E valign-text-middle wireframe josefinsans-normal-white-24px" data-id="64:261">Wireframe</div><div class="education-zSNo1E valign-text-middle education josefinsans-normal-white-24px" data-id="64:262">Education</div><div class="app-design-zSNo1E valign-text-middle app-design josefinsans-normal-white-24px" data-id="64:263">App Design</div><div class="dashboard-zSNo1E valign-text-middle dashboard josefinsans-normal-white-24px" data-id="64:264">Dashboard</div></div><div class="group-30-NG4oFS group-30" data-id="83:262"><div class="rectangle-3-fgPWCQ" data-id="83:263"></div><div class="rectangle-2-fgPWCQ" data-id="83:264"></div></div><div class="group-31-NG4oFS group-31" data-id="83:265"><img class="elemen-9" data-id="83:266" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 9"><img class="elemen-10" data-id="83:267" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 10"><img class="elemen-11" data-id="83:268" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 11"><img class="elemen-12" data-id="83:269" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 12"><div class="wireframe-RrfKFk valign-text-middle wireframe josefinsans-normal-white-24px" data-id="83:270">Wireframe</div><div class="education-RrfKFk valign-text-middle education josefinsans-normal-white-24px" data-id="83:271">Education</div><div class="app-design-RrfKFk valign-text-middle app-design josefinsans-normal-white-24px" data-id="83:272">App Design</div><div class="dashboard-RrfKFk valign-text-middle dashboard josefinsans-normal-white-24px" data-id="83:273">Dashboard</div></div><div class="our-last-NG4oFS valign-text-middle" data-id="69:577">Our Last</div><div class="group-29-NG4oFS" data-id="83:258"><div class="behind-our-design-FUtP7q" data-id="83:260">Behind Our Design</div></div><div class="rectangle-13-NG4oFS" data-id="83:275"></div><div class="figma-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:277">Figma</div><div class="ellipse-6-NG4oFS" data-id="83:279"></div><div class="x98-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:280">98%</div><div class="rectangle-14-NG4oFS" data-id="83:282"></div><div class="sketch-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:283">Sketch</div><div class="ellipse-7-NG4oFS" data-id="83:284"></div><div class="x85-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:285">85%</div><div class="rectangle-15-NG4oFS" data-id="83:287"></div><div class="canva-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:288">Canva</div><div class="ellipse-8-NG4oFS" data-id="83:289"></div><div class="x96-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:290">96%</div><div class="rectangle-16-NG4oFS" data-id="83:291"></div><div class="dribble-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:292">Dribble</div><div class="ellipse-9-NG4oFS" data-id="83:293"></div><div class="x82-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:294">82%</div><div class="rectangle-17-NG4oFS" data-id="83:296"></div><div class="vs-code-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:297">VSCode</div><div class="ellipse-10-NG4oFS" data-id="83:298"></div><div class="x91-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:299">91%</div><div class="rectangle-18-NG4oFS" data-id="83:300"></div><div class="android-s-NG4oFS valign-text-middle josefinsans-normal-violet-red-35px" data-id="83:301">Android S</div><div class="ellipse-11-NG4oFS" data-id="83:302"></div><div class="x90-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-47px" data-id="83:303">90%</div><img class="x3-2-NG4oFS" data-id="83:306" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" 
+anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-2-1@2x.png" alt="3 2"><img class="x3-1-NG4oFS" data-id="83:305" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-1-1@2x.png" alt="3 1"><img class="x3-3-NG4oFS" data-id="83:308" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-3-1@2x.png" alt="3 3"><img class="x3-4-NG4oFS" data-id="83:310" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-4-1@2x.png" alt="3 4"><img class="x3-5-NG4oFS" data-id="83:312" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-5-1@2x.png" alt="3 5"><img class="x3-6-NG4oFS" data-id="83:314" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/3-6-1@2x.png" alt="3 6"><div class="group-33-NG4oFS" data-id="86:265"><div class="rectangle-5-A1RxAl rectangle-5" data-id="86:266"></div><div class="rectangle-4-A1RxAl rectangle-4" data-id="86:267"></div><div class="group-16-A1RxAl group-16" data-id="86:268"><div class="ellipse-4-MRHtIs ellipse-4" data-id="86:269"></div><img class="play_arrow_filled-MRHtIs play_arrow_filled" data-id="86:270" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/play-arrow-filled-11.svg" alt="play_arrow_filled"></div></div><div class="view-all-project-NG4oFS valign-text-middle josefinsans-medium-white-24px" data-id="86:271">View All Project</div><div class="rectangle-19-NG4oFS" data-id="87:325"></div><div class="rectangle-22-NG4oFS" data-id="89:347"></div><div class="rectangle-23-NG4oFS" data-id="89:349"></div><div class="app-design-sxHvBZ valign-text-middle app-design josefinsans-normal-white-15px" data-id="87:335">App Design</div><div class="uiux-design-NG4oFS valign-text-middle josefinsans-normal-white-15px" data-id="87:337">UI/UX Design</div>
+<div class="wirefaming-NG4oFS valign-text-middle josefinsans-normal-white-15px" data-id="87:339">Wirefaming</div><p class="ansyif-is-a-dedicate-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="87:341">Ansyif is a dedicated professional with experience in Education and Technology. Ready to help and collaborate to achieve shared goals!</p><div class="x62-857-2419-4786-NG4oFS valign-text-middle josefinsans-normal-cod-gray-33px" data-id="89:469">+62 857-2419-4786</div>
+<div class="x62-898-8124-949-NG4oFS valign-text-middle josefinsans-normal-cod-gray-33px" data-id="89:471">+62 898-8124-949</div><a href="mailto:ansyif.sltion@gmail.com" target="_blank"><div class="ansyifsltiongmailcom-NG4oFS valign-text-middle josefinsans-normal-cod-gray-33px" data-id="89:480">ansyif.sltion@gmail.com</div></a>
+<div class="your-name-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:381">Your Name</div><div class="ex-an-syif-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:386">Ex. AnSyif</div><div class="examplegmailcom-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:388">example@gmail.com</div>
+<div class="rectangle-24-NG4oFS" data-id="89:351"></div><div class="education-sxHvBZ valign-text-middle education josefinsans-normal-white-15px" data-id="89:352">Education</div><div class="rectangle-25-NG4oFS" data-id="89:354"></div><div class="study-group-NG4oFS valign-text-middle josefinsans-normal-white-15px" data-id="89:355">Study Group</div><div class="group-34-NG4oFS" data-id="89:369">
+    <img class="x1-1-rjo8Fa x1-1" data-id="89:370" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-1-1@2x.png" alt="1 1">
+    <div class="contac-us-rjo8Fa valign-text-middle josefinsans-semi-bold-hot-pink-30px" data-id="89:371">Contac Us</div></div><div class="group-37-NG4oFS" data-id="89:527"><img class="x1-1-cXyod0 x1-1" data-id="89:528" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/1-1-1@2x.png" alt="1 1">
+        <div class="clients-testimonials-cXyod0 valign-text-middle josefinsans-semi-bold-hot-pink-30px" data-id="89:529">Clients Testimonials</div></div><div class="group-35-NG4oFS" data-id="89:373"><div class="lets-talk-for-YkVlK6 inter-medium-black-54px" data-id="89:374">Let’s Talk for</div></div><div class="your-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-54px" data-id="89:376">Your</div><div class="next-projects-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-54px" data-id="89:378">Next Projects</div><div class="client-testimonials-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-54px" data-id="89:536">Client Testimonials</div><div class="rectangle-26-NG4oFS" data-id="89:380"></div><div class="email-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:383">Email</div><div class="rectangle-27-NG4oFS" data-id="89:384"></div><div class="phone-NG4oFS valign-text-middle phone josefinsans-light-cod-gray-25px" data-id="89:390">Phone</div>
+        <div class="x082819384789-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:391">082819384789</div><div class="select-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:392">Select</div><div class="rectangle-28-NG4oFS" data-id="89:393"></div><div class="im-interested-in-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:394">I&#39;m interested in</div>
+        <div class="rectangle-29-NG4oFS" data-id="89:395"></div><div class="budget-range-usd-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:415">Budget Range (USD)</div>
+        <div class="you-message-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:430">You Message</div>
+        <div class="select-range-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:416">Select Range</div><div class="type-here-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:432">Type Here</div>
+        <div class="select-country-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:417">Select Country</div><div class="rectangle-30-NG4oFS" data-id="89:418"></div>
+        <div class="rectangle-32-NG4oFS" data-id="89:428"></div><img class="arrow-down-NG4oFS arrow-down" data-id="89:422" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-down-3.svg" alt="Arrow down"><div class="country-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="89:419">Country</div>
+        <div class="rectangle-31-NG4oFS" data-id="89:420"></div><img class="arrow-down-sxHvBZ arrow-down" data-id="89:425" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-down-3.svg" alt="Arrow down"><img class="arrow-down-sDji30 arrow-down" data-id="93:385" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-down-3.svg" alt="Arrow down">
+        <div class="group-36-NG4oFS" data-id="89:434"><div class="rectangle-5-IFRTxu rectangle-5" data-id="89:435"></div><div class="rectangle-4-IFRTxu rectangle-4" data-id="89:436"></div><div class="group-16-IFRTxu group-16" data-id="89:437"><div class="ellipse-4-M1mtC6 ellipse-4" data-id="89:438"></div><img class="play_arrow_filled-M1mtC6 play_arrow_filled" data-id="89:439" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/play-arrow-filled-12.svg" alt="play_arrow_filled"></div>
+    </div><div class="submit-NG4oFS valign-text-middle josefinsans-medium-white-24px" data-id="89:440">Submit</div><div class="ellipse-14-NG4oFS" data-id="89:463"></div><div class="ellipse-15-NG4oFS" data-id="89:464"></div><div class="ellipse-16-NG4oFS" data-id="89:478"></div><div class="ellipse-17-NG4oFS" data-id="89:482"></div><img class="phone-sxHvBZ phone" data-id="89:465" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/phone-2.svg" alt="Phone"><div class="services-sxHvBZ services" data-id="89:523">Services</div>
+    <div class="group-38-NG4oFS" data-id="89:531"><p class="the-impact-of-our-work-tBa9SN inter-medium-black-54px" data-id="89:532">The Impact of Our Work :</p></div><div class="rectangle-33-NG4oFS" data-id="89:538"></div><div class="rectangle-35-NG4oFS" data-id="89:543"></div><div class="rectangle-34-NG4oFS" data-id="89:539"></div><div class="ellipse-18-NG4oFS" data-id="89:566"></div><div class="ellipse-19-NG4oFS" data-id="89:567"></div><img class="star_filled-NG4oFS star_filled" data-id="89:571" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled">
+    <img class="star_filled-sxHvBZ star_filled" data-id="89:574" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><img class="star_filled-sDji30 star_filled" data-id="89:577" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><img class="star_filled-gIOCXM star_filled" data-id="89:578" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-13.svg" alt="star_filled"><img class="star_filled-PRYAw9 star_filled" data-id="89:582" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><p class="saya-sangat-puas-den-NG4oFS valign-text-middle saya-sangat-puas-den josefinsans-light-cod-gray-25px" data-id="89:589">&#34;Saya sangat puas dengan layanan yang diberikan! Ansyif tidak hanya profesional, tetapi juga sangat responsif dan ramah. Saya pasti akan kembali lagi dan merekomendasikan kepada teman-teman saya! Terima kasih, Ansyif!&#34;</p><img class="image-NG4oFS image" data-id="89:594" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/image-2@2x.png" alt="image"><img class="image-sxHvBZ image" data-id="89:603" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/image-4@2x.png" alt="image"><div class="imanuel-xander-NG4oFS valign-text-middle josefinsans-normal-black-33px" data-id="89:605">Imanuel Xander</div><div class="founder-pt-flancre-NG4oFS valign-text-middle" data-id="89:606">Founder PT Flancre</div><img class="star_filled-V9EBqx star_filled" data-id="89:609" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><img class="star_filled-jgdcSP star_filled" data-id="89:610" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><img class="star_filled-wmmbHO star_filled" data-id="89:611" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><img class="star_filled-GiAZHl star_filled" data-id="89:612" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-13.svg" alt="star_filled"><img class="star_filled-8RFeQx star_filled" data-id="89:613" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/star-filled-10.svg" alt="star_filled"><p class="saya-sangat-puas-den-sxHvBZ valign-text-middle saya-sangat-puas-den josefinsans-light-cod-gray-25px" data-id="89:601">&#34;Saya sangat puas dengan layanan yang diberikan! Ansyif tidak hanya profesional, tetapi juga sangat responsif dan ramah. Saya pasti akan kembali lagi dan merekomendasikan kepada teman-teman saya! Terima kasih, Ansyif!&#34;</p><p class="saya-sangat-puas-den-sDji30 valign-text-middle saya-sangat-puas-den josefinsans-light-cod-gray-25px" data-id="89:599">&#34;Saya sangat puas dengan layanan yang diberikan! Ansyif tidak hanya profesional, tetapi juga sangat responsif dan ramah. Saya pasti akan kembali lagi dan merekomendasikan kepada teman-teman saya! Terima kasih, Ansyif!&#34;</p><div class="group-39-NG4oFS" data-id="91:286"><div class="lets-fEIK2z inter-medium-black-54px" data-id="91:287">Let’s</div></div><div class="group-40-NG4oFS" data-id="91:291"><div class="there-9ppYdB inter-medium-black-54px" data-id="91:292">there</div></div><div class="connect-NG4oFS valign-text-middle josefinsans-normal-blue-jeans-54px" data-id="91:289">Connect</div><div class="navigation-NG4oFS valign-text-middle josefinsans-bold-blue-jeans-17px" data-id="91:357">Navigation</div><div class="contact-NG4oFS valign-text-middle contact josefinsans-bold-blue-jeans-17px" data-id="91:361">Contact</div><div class="get-the-latest-information-NG4oFS valign-text-middle josefinsans-bold-blue-jeans-17px" data-id="91:367">Get the latest information</div><img class="line-1-NG4oFS" data-id="91:294" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/line-1-1.svg" alt="Line 1"><div class="group-41-NG4oFS" data-id="91:295"><div class="rectangle-5-T0OqQw rectangle-5" data-id="91:296"></div>
+    <div class="rectangle-4-T0OqQw rectangle-4" data-id="91:297"></div><div class="group-16-T0OqQw group-16" data-id="91:298"><div class="ellipse-4-1L31hb ellipse-4" data-id="91:299"></div><img class="play_arrow_filled-1L31hb play_arrow_filled" data-id="91:300" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/play-arrow-filled-13.svg" alt="play_arrow_filled"></div></div><div class="view-all-service-sxHvBZ valign-text-middle view-all-service josefinsans-medium-white-24px" data-id="91:301">View All Service</div><img class="ansyf-logo-trans-1-NG4oFS ansyf-logo-trans-1" data-id="91:304" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/ansyf-logo-trans-1-1@2x.png" alt="ansyf Logo trans 1"><div class="an-syif-solution-NG4oFS valign-text-middle an-syif-solution" data-id="91:306">AnSyif Solution</div><div class="ellipse-20-NG4oFS" data-id="91:348">
+
+    </div><div class="ellipse-21-NG4oFS" data-id="91:349"></div><div class="ellipse-22-NG4oFS" data-id="91:351"></div><div class="rectangle-36-NG4oFS" data-id="91:370"></div><div class="rectangle-37-NG4oFS" data-id="91:372"></div><img class="play_arrow_filled-NG4oFS play_arrow_filled" data-id="91:375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/play-arrow-filled-7.svg" alt="play_arrow_filled"><div class="email-address-NG4oFS valign-text-middle josefinsans-light-cod-gray-25px" data-id="91:378">Email address</div><div class="group-42-NG4oFS" data-id="91:384"><img class="arrow-right-AVdQDI arrow-right" data-id="87:343" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-right-8.svg" alt="Arrow right"><img class="icon-AVdQDI" data-id="89:545" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/icon-1.svg" alt="Icon"><img class="arrow-down-AVdQDI arrow-down" data-id="89:412" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-down-6@2x.png" alt="Arrow down"><img class="phone-AVdQDI phone" data-id="89:460" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/phone-2.svg" alt="Phone"><img class="mail-AVdQDI" data-id="89:475" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/mail-1.svg" alt="mail"><img class="instagram-AVdQDI instagram" data-id="89:497" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/instagram-2.svg" alt="Instagram"><div class="ansyifs0lution-AVdQDI valign-text-middle josefinsans-normal-black-33px" data-id="89:500">@ansyif.s0lution</div><div class="anne-siyanic-AVdQDI valign-text-middle josefinsans-normal-black-33px" data-id="89:595">Anne Siyanic</div><div class="x50-AVdQDI valign-text-middle x50 josefinsans-normal-black-33px" data-id="89:585">5.0</div><div class="x50-ycmj5B valign-text-middle x50 josefinsans-normal-black-33px" data-id="89:614">5.0</div><img class="arrow-right-ycmj5B arrow-right" data-id="89:547" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-right-9.svg" alt="Arrow right"><img class="arrow-left-AVdQDI" data-id="89:563" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/arrow-left-1.svg" alt="Arrow left"><div class="founder-cv-diacso-AVdQDI valign-text-middle" data-id="89:597">Founder CV Diacso</div><div class="group-30-AVdQDI group-30" data-id="91:273">
+        <div class="rectangle-2-Mhr8RK" data-id="91:275"></div></div><div class="group-31-AVdQDI group-31" data-id="91:276"><img class="elemen-9" data-id="91:277" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 9"><img class="elemen-10" data-id="91:278" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 10">
+            <img class="elemen-11" data-id="91:279" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 11"><img class="elemen-12" data-id="91:280" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/elemen-3-1@2x.png" alt="elemen 12">
+            <div class="wireframe-Rb8XoX valign-text-middle wireframe josefinsans-normal-white-24px" data-id="91:281">Wireframe</div><div class="education-Rb8XoX valign-text-middle education josefinsans-normal-white-24px" data-id="91:282">Education</div><div class="app-design-Rb8XoX valign-text-middle app-design josefinsans-normal-white-24px" data-id="91:283">App Design</div><div class="dashboard-Rb8XoX valign-text-middle dashboard josefinsans-normal-white-24px" data-id="91:284">Dashboard</div></div><p class="ingin-tahu-lebih-ban-AVdQDI valign-text-middle josefinsans-light-cod-gray-25px" data-id="91:308">Ingin tahu lebih banyak? Hubungi Ansyif Solution dan tim kami akan siap menjawab semua pertanyaan Anda!</p>
+            <p class="coppyright-2025-an-s-AVdQDI valign-text-middle" data-id="91:380"><span><span class="span0-7r5KPh josefinsans-light-white-19px">Coppyright @ 2025 </span><span class="span1-7r5KPh">AnSyif</span><span class="span2-7r5KPh josefinsans-light-white-19px">. All Right Reserved</span></span></p><p class="user-team-conditions-privacy-policy-AVdQDI valign-text-middle josefinsans-light-white-19px" data-id="91:382">User Team &amp; Conditions | Privacy Policy</p><div class="home-service-about-p-AVdQDI valign-text-middle josefinsans-extra-light-cod-gray-17px" data-id="91:359">Home<br>Service<br>About<br>Projects <br>Testimonies<br>Blogs<br>FaQs</div>
+            <div class="x62-857-2419-4786-62-AVdQDI valign-text-middle josefinsans-extra-light-cod-gray-17px" data-id="91:363"><span><span class="span0-nruOS2 josefinsans-extra-light-cod-gray-17px">+62 857-2419-4786<br>+62 898-8124-949<br></span><a href="mailto:ansyif.sltion@gmail.com" target="_blank"><span class="span1-nruOS2 josefinsans-extra-light-cod-gray-17px">ansyif.sltion@gmail.com</span></a></span></div><img class="image-3-AVdQDI" data-id="91:311" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/image-3-1@2x.png" alt="image 3"><img class="youtube-AVdQDI" data-id="91:326" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/youtube-1.svg" alt="Youtube"><img class="instagram-ycmj5B instagram" data-id="91:329" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/instagram-3.svg" alt="Instagram"><img class="linkedin-AVdQDI" data-id="91:345" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/67a9b66ff008fcb908e709e7/releases/67ba9928494178dc0cdc16fd/img/linkedin-1.svg" alt="Linkedin"></div></div></div>
+            <script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
+        </body>
+</html>
